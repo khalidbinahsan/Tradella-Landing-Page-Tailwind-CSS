@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-@apply font-poppins;
+@apply font-poppins overflow-x-hidden;
 }
 html {
     @apply scroll-smooth overflow-x-hidden;
