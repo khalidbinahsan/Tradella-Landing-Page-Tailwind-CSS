@@ -6,6 +6,9 @@
 body {
 @apply font-poppins;
 }
+html {
+    @apply scroll-smooth overflow-x-hidden;
+}
 .swiper-pagination-bullet {
     @apply bg-transparent border-2 border-slate-100 w-2 h-2;
 }

@@ -746,14 +746,6 @@ video {
   overflow: hidden;
 }
 
-.text-wrap{
-  text-wrap: wrap;
-}
-
-.text-pretty{
-  text-wrap: pretty;
-}
-
 .rounded-full{
   border-radius: 9999px;
 }
@@ -972,6 +964,11 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .swiper-pagination-bullet{
   height: 0.5rem;
   width: 0.5rem;
@@ -1133,16 +1130,13 @@ body{
     gap: 0px;
   }
 
-  .lg\:gap-10{
-    gap: 2.5rem;
-  }
-
   .lg\:gap-20{
     gap: 5rem;
   }
 
-  .lg\:gap-3{
-    gap: 0.75rem;
+  .lg\:gap-x-10{
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .lg\:gap-x-40{
@@ -1152,11 +1146,6 @@ body{
 
   .lg\:gap-y-20{
     row-gap: 5rem;
-  }
-
-  .lg\:gap-x-10{
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
   }
 
   .lg\:border-l{
